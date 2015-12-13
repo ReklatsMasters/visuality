@@ -1,0 +1,12 @@
+{
+  "name": "visuality",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.34",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^5.4.0",
+    "eslint": "^1.10.3",
+    "webpack": "^1.12.9"
+  }
+}
