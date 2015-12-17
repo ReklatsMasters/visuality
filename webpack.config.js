@@ -1,9 +1,10 @@
 const webpack = require('webpack');
+const fs = require('fs');
 
 module.exports = {
 	debug: false,
 	entry: {
-		mixpal: [ './mixpal.js' ]
+		mixpal: [ './src/mixpal.js' ]
 	},
 	output: {
 		path: __dirname + '/dist',
@@ -20,6 +21,7 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.optimize.DedupePlugin(),
-		new webpack.optimize.UglifyJsPlugin({sourceMap:false})
+    new webpack.optimize.UglifyJsPlugin({ sourceMap: false }),
+    new webpack.BannerPlugin(fs.readFileSync('banner.js', 'utf8'), {raw: true})
 	]
 }

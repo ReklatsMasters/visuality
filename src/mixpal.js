@@ -1,5 +1,5 @@
-import waveform from './lib/waveform';
-import {ColumnChart} from './lib/chart';
+import waveform from '../lib/waveform';
+import {ColumnChart} from '../lib/chart';
 
 const id = 'jp_audio_0';
 const audio = document.getElementById(id);
